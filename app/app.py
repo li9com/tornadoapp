@@ -9,6 +9,7 @@ class MainHandler(tornado.web.RequestHandler):
         self.write("This is an example Python applicaiton\n")
         self.write("It is running on " +platform.node() +"\n" )
         self.write("Current time is " + str(now)+"\n")
+        self.write("####################################\n")
 
 def make_app():
     return tornado.web.Application([
